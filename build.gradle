@@ -1,0 +1,24 @@
+group 'com.techietester'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+   // implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    implementation 'io.rest-assured:rest-assured:4.3.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.1'
+    implementation 'io.rest-assured:json-schema-validator:4.1.2'
+    implementation group: 'com.aventstack', name: 'extentreports', version: '4.1.7'
+    // https://mvnrepository.com/artifact/org.testng/testng
+// https://mvnrepository.com/artifact/org.testng/testng
+    implementation group: 'org.testng', name: 'testng', version: '7.0.0'
+
+}
+
+test {
+    useTestNG()
+}
